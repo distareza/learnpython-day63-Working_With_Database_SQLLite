@@ -5,7 +5,6 @@ app.config['SECRET_KEY'] = "df0331cefc6c2b9a5d0208a726a5d1c0fd37324feba25506"
 
 all_books = []
 
-
 @app.route('/')
 def home():
     return render_template("index.html", mylibrary=all_books)
